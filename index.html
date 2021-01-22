@@ -4,37 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- FavIcon -->
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <!-- Botstrap CDN -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Googlefonts CDN -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS local style -->
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <!-- Title -->
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <section id="FAQ-Card">
+      <div class="row">
+        <div class="col-lg-6 my-auto left-side">
+          <div class="illustration">
+            
+            <img class="img woman" src="/images/illustration-woman-online-desktop.svg" alt="img-woman">
+            <img class="img pattern" src="/images/bg-pattern-desktop.svg" alt="img-pattern">
+          </div>
+          <img class="img box" src="/images/illustration-box-desktop.svg" alt="img-box">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <div class="col-lg-6 my-auto right-side">
+          <h1>FAQ</h1>
+          <br>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+          <div class="question-container">
+            <a class="btn question" type="button" data-toggle="collapse" data-target="#answer1" aria-expanded="false" aria-controls="answer1">
+              <div class="question-text">
+                <span id="question1">How many team members can I invite?</span> 
+                <img class="arrow-down" src="/images/icon-arrow-down.svg" alt="arrow-down">
+              </div>
+            </a>
+            
+            <div class="collapse" id="answer1">
+                <span class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</span>
+            </div>
+          </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+
+          <div class="question-container">
+            <a class="btn question" type="button" data-toggle="collapse" data-target="#answer2" aria-expanded="false" aria-controls="answer2">
+              <div class="question-text">
+                <span id="question2">What is the maximum file upload size?</span> 
+                <img class="arrow-down" src="/images/icon-arrow-down.svg" alt="arrow-down">
+              </div>
+            </a>
+
+            <div class="collapse" id="answer2">
+              <span class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</span>
+            </div>
+          </div>
+
+          <div class="question-container">
+            <a class="btn question" type="button" data-toggle="collapse" data-target="#answer3" aria-expanded="false" aria-controls="answer3">
+              <div class="question-text">
+                <span id="question3">How do I reset my password?</span> 
+                <img class="arrow-down" src="/images/icon-arrow-down.svg" alt="arrow-down">
+              </div>
+            </a>
+
+            <div class="collapse" id="answer3">
+              <span class="answer">          Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you</span>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="question-container">
+            <a class="btn question" type="button" data-toggle="collapse" data-target="#answer4" aria-expanded="false" aria-controls="answer4">
+              <div class="question-text">
+                <span id="question4">Can I cancel my subscription?</span> 
+                <img class="arrow-down" src="/images/icon-arrow-down.svg" alt="arrow-down">
+              </div>
+            </a>
+
+            <div class="collapse" id="answer4">
+              <span class="answer">Yes! Send us a message and we’ll process your request no questions asked.</span>
+            </div>
+          </div>
+
+
+
+          <div class="question-container">
+            <a class="btn question" type="button" data-toggle="collapse" data-target="#answer5" aria-expanded="false" aria-controls="answer5">
+              <div class="question-text">
+                <span id="question5">Do you provide additional support?</span> 
+                <img class="arrow-down" src="/images/icon-arrow-down.svg" alt="arrow-down">
+              </div>
+            </a>
+
+            <div class="collapse" id="answer5">
+              <span class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.github.com/joelhenwang" target="_blank">Joel Wang</a>.
   </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="/javascript/js_script.js"></script>
 </body>
 </html>

@@ -1,0 +1,177 @@
+/* HTML selectors */
+
+body{
+    padding: 10% 20%;
+    height: 100vh;
+    background-color: hsl(240, 73%, 65%);
+    background-image: linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+   
+}
+
+h1{
+    font-weight: 700;
+}
+
+/* FAQ Card section */
+#FAQ-Card{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white ;
+}
+
+/* Full Card Row */
+.row{
+    height: 100%;
+}
+
+
+
+
+/* Left side <-> Illustration */
+.col-lg-6.left-side{
+    height: 100%;
+}
+
+.illustration{
+    overflow: hidden;
+    height: 100%;
+}
+
+.img{
+    position: relative;
+}
+
+.pattern{
+    right: 555px;
+    bottom: 650px;
+}
+
+.woman{
+    left: -60px;
+    top: 50px;
+    z-index: 1;
+}
+
+
+.box{
+    bottom: 80%;
+    left: -93px;
+    z-index: 2;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Right Side <-> FAQ */
+
+.col-lg-6.right-side{
+    padding: 5% 10% 5% 0%;
+    height: 100%;
+}
+
+/* Container of each question button */
+.question-container{
+    margin-bottom: 30px;    
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Question inside the button */
+.btn.question{
+    padding-left: 0;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+}
+
+/* Arrow down icon */
+.arrow-down{
+    position: relative;
+    float: right;
+    top: 8px;
+}
+
+/* Hovering the question */
+.question-text:hover{
+    color: hsl(14, 88%, 65%);
+
+}
+
+/* Answer Text */
+.answer{
+    font-size: 14px;
+    color: hsl(240, 6%, 50%);
+}
+
+
+/* Footing */
+
+.attribution { font-size: 11px; text-align: center; margin-top: 20px;color: white;}
+
+.attribution a { color: hsl(214, 50%, 75%); }
+
+@media (max-width: 1280px){
+    body{
+        padding: 10% 10%;
+    }
+
+
+}
+
+@media (max-width:991px){
+    #FAQ-Card{
+        margin-top: 15%;
+    }
+
+    .col-lg-6.left-side{
+        height: 30%;
+    }
+
+    .col-lg-6.right-side{
+        bottom: 15%;
+        padding-left: 10%;
+        height: 70%;
+    }
+
+    .illustration{
+        text-align: center;
+        overflow:visible;
+    }
+
+    .woman{
+        top: -150px;
+        left: auto;
+    }
+
+    .box{
+        top:-300px;
+        left: auto;
+    }
+
+    .pattern{
+        visibility: hidden;
+    }
+
+}
+
+@media (max-width: 612px){
+    #FAQ-Card{
+        margin-top: 25%;
+    }
+    
+    .illustration{
+        height: 30%;
+    }
+    .woman{
+        width: 75%;
+    }
+    .box{
+        width: 25%;
+        left: 5%;
+        top: -130px;
+    }
+}
